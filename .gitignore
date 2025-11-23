@@ -1,0 +1,32 @@
+# Fichiers Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Fichiers IDE
+.idea/
+*.iml
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Variables d'environnement
+.env
+.env.local
+*.env
+
+# Docker
+*.tar.gz
+
