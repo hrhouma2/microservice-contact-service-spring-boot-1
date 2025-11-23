@@ -18,6 +18,7 @@ Ce dossier contient toute la documentation nécessaire pour installer et utilise
 | **03** | [03-faq.md](03-faq.md) | 28 questions/réponses fréquentes | Variable | **En cas de problème** - Référence |
 | **04** | [04-checklist.md](04-checklist.md) | Checklist à imprimer et cocher | 1 min | **Pendant le TP** - Suivre progression |
 | **05** | [05-aide-memoire.md](05-aide-memoire.md) | Résumé 1 page - commandes essentielles | 2 min | **Après le TP** - Référence rapide |
+| **06** | [06-acces-et-utilisation.md](06-acces-et-utilisation.md) | Guide d'accès et d'utilisation de l'API | 15 min | **Après installation** - Comment accéder à l'API |
 
 ### Pour les Formateurs
 
