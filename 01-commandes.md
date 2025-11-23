@@ -54,5 +54,27 @@ apt install git
 git clone  https://github.com/hrhouma2/microservice-contact-service-spring-boot-1.git
 cd microservice-contact-service-spring-boot-1
 ls
-
 ```
+
+### Commandes à Exécuter (Copier-Coller)
+
+```bash
+# 1. Aller dans le Bureau
+cd /home/eleve/Bureau
+
+# 2. Cloner le projet
+git clone https://github.com/hrhouma2/microservice-contact-service-spring-boot-1.git
+
+# 3. Entrer dans le dossier
+cd microservice-contact-service-spring-boot-1/scripts
+
+# 4. Rendre les scripts exécutables
+chmod +x *.sh
+
+# 5. Vérifier les prérequis
+bash 00-verifier-prerequis.sh
+
+# 6. Lancer l'installation complète
+sudo bash 00-installation-complete.sh
+```
+
