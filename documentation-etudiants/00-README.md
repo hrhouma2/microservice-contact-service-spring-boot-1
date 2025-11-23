@@ -25,6 +25,7 @@ Ce dossier contient toute la documentation nécessaire pour installer et utilise
 | **10** | [10-troubleshooting-commun.md](10-troubleshooting-commun.md) | Guide de dépannage - Problèmes courants | Variable | **SOS** - Solutions aux erreurs fréquentes |
 | **11** | [11-architecture-flexible.md](11-architecture-flexible.md) | Architecture flexible multi-formulaires/sites | 20 min | **Concepts** - Comprendre la puissance du système |
 | **12** | [12-faq-avancee.md](12-faq-avancee.md) | FAQ avancée - Questions techniques | 25 min | **Clarifications** - Multi-domaines et structure BDD |
+| **13** | [13-evolutivite-scalabilite.md](13-evolutivite-scalabilite.md) | Guide d'évolutivité et scalabilité | 30 min | **Avancé** - Faire évoluer et scaler le système |
 
 ### Pour les Formateurs
 
