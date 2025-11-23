@@ -1,6 +1,6 @@
 ## Pour débuter
 
-# Depuis votre machine Ubuntu 24.04
+# 01 - Depuis votre machine Ubuntu 24.04
 
 ```bash
 sudo -s + mot de passe
@@ -27,7 +27,7 @@ ip a
 
 
 
-# Depuis votre machine windows
+# 02 - Depuis votre machine windows
 - Ouvrir un termainl cmd
 
 ```bash
@@ -37,4 +37,10 @@ ssh username@IP
 ## exemple
 
 <img width="761" height="72" alt="image" src="https://github.com/user-attachments/assets/8f4baa00-783d-4662-9dd4-b7f09d21b9ea" />
+
+
+# 03 - connectez-vous comme administrateur 
+
+
+<img width="722" height="178" alt="image" src="https://github.com/user-attachments/assets/cbd4c866-b7a7-4729-9dea-2ed18488f90a" />
 
