@@ -1,28 +1,47 @@
--- Script d'initialisation de la base de données
--- Exécuté automatiquement au démarrage du conteneur PostgreSQL
-
-CREATE TABLE IF NOT EXISTS form_submissions (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    form_id VARCHAR(100) NOT NULL,
-    email VARCHAR(500) NOT NULL,
-    name VARCHAR(500),
-    message TEXT,
-    page_url VARCHAR(500),
-    referrer VARCHAR(500),
-    data JSONB,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+-- Creation de la table des messages de contact
+CREATE TABLE IF NOT EXISTS contact_submissions (
+    id BIGSERIAL PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telephone VARCHAR(50),
+    sujet VARCHAR(500) NOT NULL,
+    message TEXT NOT NULL,
+    date_soumission TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    ip_address VARCHAR(50),
+    user_agent TEXT,
+    statut VARCHAR(50) DEFAULT 'NOUVEAU',
+    lu BOOLEAN DEFAULT FALSE,
+    date_lecture TIMESTAMP,
+    notes_admin TEXT,
+    date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    date_modification TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Index pour améliorer les performances
-CREATE INDEX IF NOT EXISTS idx_form_submissions_form_id ON form_submissions(form_id);
-CREATE INDEX IF NOT EXISTS idx_form_submissions_email ON form_submissions(email);
-CREATE INDEX IF NOT EXISTS idx_form_submissions_created_at ON form_submissions(created_at DESC);
+-- Index pour ameliorer les performances
+CREATE INDEX IF NOT EXISTS idx_email ON contact_submissions(email);
+CREATE INDEX IF NOT EXISTS idx_date_soumission ON contact_submissions(date_soumission DESC);
+CREATE INDEX IF NOT EXISTS idx_statut ON contact_submissions(statut);
+CREATE INDEX IF NOT EXISTS idx_lu ON contact_submissions(lu);
 
--- Index GIN pour les recherches JSON
-CREATE INDEX IF NOT EXISTS idx_form_submissions_data_gin ON form_submissions USING GIN (data);
+-- Trigger pour mise a jour automatique de date_modification
+CREATE OR REPLACE FUNCTION update_modified_date()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.date_modification = CURRENT_TIMESTAMP;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
 
--- Commentaires
-COMMENT ON TABLE form_submissions IS 'Stockage des soumissions de formulaires de contact';
-COMMENT ON COLUMN form_submissions.form_id IS 'Identifiant du formulaire (ex: astro-contact)';
-COMMENT ON COLUMN form_submissions.data IS 'Champs dynamiques supplémentaires (JSON)';
+CREATE TRIGGER trigger_update_contact_modified
+BEFORE UPDATE ON contact_submissions
+FOR EACH ROW
+EXECUTE FUNCTION update_modified_date();
+
+-- Donnees de demonstration (optionnel - peut etre commente si non desire)
+INSERT INTO contact_submissions (nom, email, telephone, sujet, message, ip_address)
+VALUES 
+    ('Jean Dupont', 'jean.dupont@example.com', '0612345678', 'Demande d''information', 'Bonjour, je souhaite avoir plus d''informations sur vos services.', '192.168.1.100'),
+    ('Marie Martin', 'marie.martin@example.com', '0687654321', 'Support technique', 'J''ai un probleme avec mon compte.', '192.168.1.101'),
+    ('Pierre Durand', 'pierre.durand@example.com', '0698765432', 'Partenariat', 'Je suis interesse par un partenariat.', '192.168.1.102')
+ON CONFLICT DO NOTHING;
 
