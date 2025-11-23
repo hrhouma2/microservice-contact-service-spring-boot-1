@@ -24,6 +24,7 @@ Ce dossier contient toute la documentation nécessaire pour installer et utilise
 | **09** | [09-guide-swagger.md](09-guide-swagger.md) | Guide Swagger UI avec tests et diagrammes | 30 min | **Tests** - Tester l'API et vérifier PostgreSQL |
 | **10** | [10-troubleshooting-commun.md](10-troubleshooting-commun.md) | Guide de dépannage - Problèmes courants | Variable | **SOS** - Solutions aux erreurs fréquentes |
 | **11** | [11-architecture-flexible.md](11-architecture-flexible.md) | Architecture flexible multi-formulaires/sites | 20 min | **Concepts** - Comprendre la puissance du système |
+| **12** | [12-faq-avancee.md](12-faq-avancee.md) | FAQ avancée - Questions techniques | 25 min | **Clarifications** - Multi-domaines et structure BDD |
 
 ### Pour les Formateurs
 
