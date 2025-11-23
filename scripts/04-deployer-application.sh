@@ -49,16 +49,19 @@ echo "[1/6] Création de la structure de dossiers..."
 mkdir -p ~/apps/logs
 mkdir -p ~/apps/backups
 
+# Extraire le nom du repository depuis l'URL
+REPO_NAME=$(basename "$REPO_URL" .git)
+
 echo ""
 echo "[2/6] Clonage du repository..."
 cd ~/apps
 
 # Supprimer le dossier s'il existe déjà
-if [ -d "contact-service-springboot" ]; then
+if [ -d "$REPO_NAME" ]; then
     echo "Le dossier existe déjà. Voulez-vous le supprimer et re-cloner ? (o/n)"
     read -r response
     if [[ "$response" =~ ^[Oo]$ ]]; then
-        rm -rf contact-service-springboot
+        rm -rf "$REPO_NAME"
     else
         echo "Opération annulée."
         exit 0
@@ -66,7 +69,7 @@ if [ -d "contact-service-springboot" ]; then
 fi
 
 git clone "$REPO_URL"
-cd contact-service-springboot
+cd "$REPO_NAME"
 
 echo ""
 echo "[3/6] Configuration des variables d'environnement..."

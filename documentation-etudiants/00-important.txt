@@ -1,0 +1,6 @@
+cd /home/eleve/Bureau
+git clone https://github.com/hrhouma2/microservice-contact-service-spring-boot-1.git
+cd microservice-contact-service-spring-boot-1/scripts
+chmod +x *.sh
+bash 00-verifier-prerequis.sh
+sudo bash 00-installation-complete.sh
