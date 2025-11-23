@@ -21,6 +21,7 @@ Ce dossier contient toute la documentation nécessaire pour installer et utilise
 | **06** | [06-acces-et-utilisation.md](06-acces-et-utilisation.md) | Guide d'accès et d'utilisation de l'API | 15 min | **Après installation** - Comment accéder à l'API |
 | **07** | [07-tests-et-cors.md](07-tests-et-cors.md) | Tests API et configuration CORS complète | 20 min | **Développement** - Tests et accès réseau |
 | **08** | [08-base-de-donnees.md](08-base-de-donnees.md) | Guide complet de la base de données PostgreSQL | 25 min | **Administration** - Gérer et consulter les données |
+| **09** | [09-guide-swagger.md](09-guide-swagger.md) | Guide Swagger UI avec tests et diagrammes | 30 min | **Tests** - Tester l'API et vérifier PostgreSQL |
 
 ### Pour les Formateurs
 
