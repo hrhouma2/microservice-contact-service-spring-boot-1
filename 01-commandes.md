@@ -20,7 +20,11 @@ service ssh status
 ip a
 ```
 
-Je note l'addresse devant la ligne inet
+- Je note l'addresse devant la ligne inet.
+- Exemple:
+
+<img width="881" height="152" alt="image" src="https://github.com/user-attachments/assets/eef66665-c39e-48d7-92b3-51d870317755" />
+
 
 
 # Depuis votre machine windows
@@ -30,4 +34,7 @@ Je note l'addresse devant la ligne inet
 ssh username@IP
 ```
 
-exemple
+## exemple
+
+<img width="761" height="72" alt="image" src="https://github.com/user-attachments/assets/8f4baa00-783d-4662-9dd4-b7f09d21b9ea" />
+
