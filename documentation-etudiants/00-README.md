@@ -20,6 +20,7 @@ Ce dossier contient toute la documentation nécessaire pour installer et utilise
 | **05** | [05-aide-memoire.md](05-aide-memoire.md) | Résumé 1 page - commandes essentielles | 2 min | **Après le TP** - Référence rapide |
 | **06** | [06-acces-et-utilisation.md](06-acces-et-utilisation.md) | Guide d'accès et d'utilisation de l'API | 15 min | **Après installation** - Comment accéder à l'API |
 | **07** | [07-tests-et-cors.md](07-tests-et-cors.md) | Tests API et configuration CORS complète | 20 min | **Développement** - Tests et accès réseau |
+| **08** | [08-base-de-donnees.md](08-base-de-donnees.md) | Guide complet de la base de données PostgreSQL | 25 min | **Administration** - Gérer et consulter les données |
 
 ### Pour les Formateurs
 
