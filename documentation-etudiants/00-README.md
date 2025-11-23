@@ -22,6 +22,7 @@ Ce dossier contient toute la documentation nécessaire pour installer et utilise
 | **07** | [07-tests-et-cors.md](07-tests-et-cors.md) | Tests API et configuration CORS complète | 20 min | **Développement** - Tests et accès réseau |
 | **08** | [08-base-de-donnees.md](08-base-de-donnees.md) | Guide complet de la base de données PostgreSQL | 25 min | **Administration** - Gérer et consulter les données |
 | **09** | [09-guide-swagger.md](09-guide-swagger.md) | Guide Swagger UI avec tests et diagrammes | 30 min | **Tests** - Tester l'API et vérifier PostgreSQL |
+| **10** | [10-troubleshooting-commun.md](10-troubleshooting-commun.md) | Guide de dépannage - Problèmes courants | Variable | **SOS** - Solutions aux erreurs fréquentes |
 
 ### Pour les Formateurs
 
