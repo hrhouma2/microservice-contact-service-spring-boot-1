@@ -51,5 +51,8 @@ ssh username@IP
 
 ```bash
 apt install git
-git clone 
+git clone  https://github.com/hrhouma2/microservice-contact-service-spring-boot-1.git
+cd microservice-contact-service-spring-boot-1
+ls
+
 ```
