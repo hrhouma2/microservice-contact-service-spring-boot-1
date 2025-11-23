@@ -44,3 +44,12 @@ ssh username@IP
 
 <img width="722" height="178" alt="image" src="https://github.com/user-attachments/assets/cbd4c866-b7a7-4729-9dea-2ed18488f90a" />
 
+
+# 04 - manipulations
+
+
+
+```bash
+apt install git
+git clone 
+```
